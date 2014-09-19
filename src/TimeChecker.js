@@ -12,6 +12,8 @@ TimeChecker.prototype.yoTime = function() {
 	if((hour + ":" + minute) == "9:30"){
 		return(true)
 	}
+	else if((hour + ":" + minute) == "14:30")
+		return(true)
 	else{
 		return(false)
 	}
