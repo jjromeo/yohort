@@ -1,6 +1,5 @@
 describe("TimeChecker", function() {
   var timeChecker;
-  var nineThirty;
 
   beforeEach(function() {
     timeChecker = new TimeChecker
