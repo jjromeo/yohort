@@ -1,8 +1,8 @@
-describe("TimeChecker", function() {
+describe("YoTimeChecker", function() {
   var timeChecker;
 
   beforeEach(function() {
-    timeChecker = new TimeChecker
+    timeChecker = new YoTimeChecker
   });
 
   withTimeFrozenAt("2014-01-01 09:30:00 GMT+0000", function(){

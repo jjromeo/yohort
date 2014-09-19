@@ -2,10 +2,10 @@ var date;
 var hour;
 var minute;
 
-function TimeChecker(){
+function YoTimeChecker(){
 }
 
-TimeChecker.prototype.yoTime = function() {
+YoTimeChecker.prototype.yoTime = function() {
 	var date = new Date
 	var hour = date.getHours()
 	var minute = date.getMinutes()
@@ -13,6 +13,3 @@ TimeChecker.prototype.yoTime = function() {
 	else return(false)
 };
 
-TimeChecker.prototype.timeFormat = function() {
-	hour + ":" + minute
-};
