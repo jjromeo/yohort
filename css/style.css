@@ -11,3 +11,7 @@ h1 {
 .sub-header {
 	font-size: 4em;
 }
+
+div#yo-button {
+	margin: 0 auto;
+}
