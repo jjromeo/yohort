@@ -5,16 +5,16 @@ describe("YoTimeChecker", function() {
     timeChecker = new YoTimeChecker
   });
 
-  withTimeFrozenAt("2014-01-01 09:30:00 GMT+0000", function(){
+  withTimeFrozenAt("2014-01-01 09:25:00 GMT+0000", function(){
 
-    it("knows it's time to yo when it's 9:30am", function(){
+    it("knows it's time to yo when it's 9:25am", function(){
       expect(timeChecker.yoTime()).toBe(true)
     })
   })
 
-  withTimeFrozenAt("2014-01-01 14:30:00 GMT+0000", function(){
+  withTimeFrozenAt("2014-01-01 14:25:00 GMT+0000", function(){
 
-    it("knows it's time to yo when it's 2:30pm", function(){
+    it("knows it's time to yo when it's 2:25pm", function(){
       expect(timeChecker.yoTime()).toBe(true)
     })
   })
