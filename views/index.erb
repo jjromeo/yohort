@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yohort</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<h1>Yo</h1>
+	<h1 class="sub-header">#Yohort</h1>
+	<h2>It's that simple.</h2>
+	<p>Hello Makers, Yohort is a simple yo app which will send you a yo 5 minutes before a lesson is about to start at makers academy.</p>
+	<p><strong>How it works</strong></p>
+	<p>Simply download the yo application, add the user "YOHORT" and send it a yo to subscribe</p>
+	<div id="yo-button"></div>
+	<p><a href="https://github.com/jjromeo/Yohort">yohort on github</a></p>
+	<script type="text/javascript" src="js/YoTimeChecker.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript" src="js/YoScript.js"></script>
+	<script>
+		var _yoData = {
+			"username": "YOHORT",
+			"trigger": "a class at Makers is starting"
+		};
+		var s = document.createElement("script");
+		s.type = "text/javascript";
+		s.src = "js/yoButton.js";
+		(document.head || document.getElementsByTagName("head")[0]).appendChild(s);
+	</script>
+
+</body>
+</html>
+
